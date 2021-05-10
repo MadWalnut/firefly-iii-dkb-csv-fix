@@ -69,11 +69,9 @@ Download the source and `cd` into the project directory. Adapt the command to yo
 
 `dotnet publish --configuration Release --runtime win-x86 --output C:\Users\USERNAME\Desktop\dotnet --self-contained false`
 
-Set the build target accordingly. You can find the options [here](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog#using-rids).
-
-Set the output path for your binaries.
-
-Only set `self-contained true` if you want to want to run the application on a system that has **no** .NET runtime installed.
+- Set the build target accordingly. You can find the options [here](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog#using-rids).
+- Set the output path for your binaries.
+- Only set `self-contained true` if you want to want to run the application on a system that has **no** .NET runtime installed.
 
 For more information on the `dotnet publish` command, see [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-publish).
 
