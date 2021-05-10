@@ -79,7 +79,7 @@ For more information on the `dotnet publish` command, see [here](https://docs.mi
 
 ### Issues
 
-If you get a .pdb file after publishing, you can add `-p:DebugType=None` as a parameter to your `dotnet publish` command. You don't need this file.
+If you get a `.pdb` file after publishing, you can add `-p:DebugType=None` as a parameter to your `dotnet publish` command. You don't need this file.
 
 If you end up with multiple output files instead of one (e.g. .dll files), add this parameter to your `dotnet publish` command: `-p:PublishSingleFile=true`
 
