@@ -63,7 +63,7 @@ To remove this shortcut, just delete the keys from the registry.
 
 ## Building
 
-Compiling yourself is easy. Just make sure you have at least .NET 5.0 **SDK** installed (see [Installation](#installation)).
+Compiling yourself is easy. Just make sure you have at least .NET 5.0 **SDK** installed (download from [here](https://dotnet.microsoft.com/download/dotnet)).
 
 Download the source and `cd` into the project directory. Adapt the command to your needs:
 
