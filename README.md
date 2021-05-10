@@ -55,7 +55,7 @@ Windows Registry Editor Version 5.00
 ```
 **Remember to change the path to the application!**
 
-Then save as a .reg file and execute it. You may need to restart your computer. 
+Then save as a `.reg` file and execute it. You may need to restart your computer. 
 
 ![Contextmenu](https://user-images.githubusercontent.com/33835479/117704414-1c86b600-b1cb-11eb-9f49-730679ab7d6e.png)
 
