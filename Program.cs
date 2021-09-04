@@ -34,7 +34,7 @@ namespace FireflyFixTransactionReportDKB
                 Console.WriteLine(Environment.NewLine + "Usage: FireflyFixTransactionReportDKB [FILEPATH TO CSV EXPORT FROM DKB]");
                 Console.WriteLine(Environment.NewLine + "Repo and more information: https://github.com/MadWalnut/firefly-iii-dkb-csv-fix" + Environment.NewLine
                     + "Icon made by Freepik (https://www.flaticon.com/authors/freepik) from https://www.flaticon.com" + Environment.NewLine
-                    + "Firefly III DKB CSV Fix v1.0.4.0" + " Copyright © " + DateTime.Now.Year + " MadWalnut");
+                    + "Firefly III DKB CSV Fix v1.0.5.0" + " Copyright © " + DateTime.Now.Year + " MadWalnut");
                 return;
             }
              
