@@ -105,7 +105,7 @@ namespace FireflyFixTransactionReportDKB
                 if (string.IsNullOrWhiteSpace(importFileContent[i]) || importFileContent[i].StartsWith("\"Kontonummer:\";\"DE") || importFileContent[i].StartsWith("\"Von:\";\"")
                     || importFileContent[i].StartsWith("\"Bis:\";\"") || importFileContent[i].StartsWith("\"Kontostand vom ") || importFileContent[i].StartsWith("\"Kreditkarte:\";\"")
                     || importFileContent[i].StartsWith("\"Zeitraum:\";\"") || importFileContent[i].StartsWith("\"Saldo:\";\"") || importFileContent[i].StartsWith("\"Datum:\";\"")
-                    || importFileContent[i].Contains("\"KREDITKARTENABRECHNUNG VISA") || importFileContent[i].Contains(";\"Abschluss\";"))
+                    || importFileContent[i].Contains("\"KREDITKARTENABRECHNUNG") || importFileContent[i].Contains(";\"Abschluss\";"))
                 {
                     // Remove the unwanted line from the list.
                     importFileContent.RemoveAt(i);
