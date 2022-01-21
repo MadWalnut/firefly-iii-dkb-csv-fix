@@ -4,7 +4,7 @@ This application checks if a given file is a valid [DKB](https://www.dkb.de/) tr
 
 These are the lines that are removed:
 - First few as they only contain information about your account and Firefly III CSV importer is only capable of ignoring a single header line.
-- Any line containing "KREDITKARTENABRECHNUNG VISA" (including quotation marks). This will remove your credit card bill from the checking account transaction list. It will *not* remove it from your credit card transaction list though. Whithout this, your credit card bill would show up twice in Firefly III after importing both your checking account CSV and your credit card CSV.
+- Any line containing "KREDITKARTENABRECHNUNG" (including quotation marks). This will remove your credit card bill from the checking account transaction list. It will *not* remove it from your credit card transaction list though. Whithout this, your credit card bill would show up twice in Firefly III after importing both your checking account CSV and your credit card CSV.
 - Any line containing "Abschluss" (including quotation marks). This will remove the fake transaction in the CSV file which is created on the first of every month and only shows the current account balance. As this is not a real transaction, the Firefly III CSV importer will not be able to parse this line.
 
 *If you would like the removal of the lines to be an optional feature (e.g. to be enabled via a parameter like `--removeCreditCardBill`), let me know by opening an issue.*
