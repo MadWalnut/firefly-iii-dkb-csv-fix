@@ -1,11 +1,11 @@
 ﻿# Firefly III DKB CSV Fixer
 
-This application checks if a given file is a valid [DKB](https://www.dkb.de/) transaction report (checking account or credit card). It then converts the file from ANSI to UTF-8, after removing several unwanted lines in order to prepare it for the [Firefly III CSV importer](https://github.com/firefly-iii/csv-importer).
+This application checks if a given file is a valid [DKB](https://www.dkb.de/) transaction report (checking account or credit card). It then converts the file from ANSI to UTF-8, after removing several unwanted lines in order to prepare it for the [Firefly III Data Importer](https://github.com/firefly-iii/data-importer).
 
 These are the lines that are removed:
-- First few as they only contain information about your account and Firefly III CSV importer is only capable of ignoring a single header line.
+- First few as they only contain information about your account and Firefly III Data Importer is only capable of ignoring a single header line.
 - Any line containing "KREDITKARTENABRECHNUNG" (including quotation marks). This will remove your credit card bill from the checking account transaction list. It will *not* remove it from your credit card transaction list though. Whithout this, your credit card bill would show up twice in Firefly III after importing both your checking account CSV and your credit card CSV.
-- Any line containing "Abschluss" (including quotation marks). This will remove the fake transaction in the CSV file which is created on the first of every month and only shows the current account balance. As this is not a real transaction, the Firefly III CSV importer will not be able to parse this line.
+- Any line containing "Abschluss" (including quotation marks). This will remove the fake transaction in the CSV file which is created on the first of every month and only shows the current account balance. As this is not a real transaction, the Firefly III Data Importer will not be able to parse this line.
 
 *If you would like the removal of the lines to be an optional feature (e.g. to be enabled via a parameter like `--removeCreditCardBill`), let me know by opening an issue.*
 
@@ -36,7 +36,7 @@ If you prefer to build yourself, see [here](#building).
 ```
 FireflyFixTransactionReportDKB "C:\Path\To\The\CSV file.csv"
 ```
-3. Import as usual to the Firefly III CSV importer, using the [import configuration](https://github.com/firefly-iii/import-configurations/tree/main/de/dkb). Remember that you may need to change `import-account` in the configuration files to match your Firefly III account IDs.
+3. Import as usual to the Firefly III Data Importer, using the [import configuration](https://github.com/firefly-iii/import-configurations/tree/main/de/dkb). Remember that you may need to change `import-account` in the configuration files to match your Firefly III account IDs.
 
 ## Windows Explorer Integration
 You don't have to call the program manually via command line every time. You can integrate it into Windows Explorer, so when right-clicking on any CSV file, you will see the option *Fix DKB export for Firefly*. To achieve this, just add a few registry entries. The fastest way is to create an empty text file and copy these contents into the file:
