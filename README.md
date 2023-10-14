@@ -21,7 +21,7 @@ Head over to the [release page](https://github.com/MadWalnut/firefly-iii-dkb-csv
 
 ### Download Framework-dependant binary
 
-DKB CSV Fixer requires the .NET runtime (or SDK). Install .NET 5.0 or higher from [here](https://dotnet.microsoft.com/download/dotnet) (available for Linux, macOS and Windows). If you are on Windows, you may have the runtime installed already. You can check with `dotnet --version`.
+DKB CSV Fixer requires the .NET runtime (or SDK). Install .NET 6.0 or higher from [here](https://dotnet.microsoft.com/download/dotnet) (available for Linux, macOS and Windows). If you are on Windows, you may have the runtime installed already. You can check with `dotnet --version`.
 
 Then, [download the compiled release](https://github.com/MadWalnut/firefly-iii-dkb-csv-fix/releases) for your platform. You **don't** need the self-contained version.
 
@@ -63,7 +63,7 @@ To remove this shortcut, just delete the keys from the registry.
 
 ## Building
 
-Compiling yourself is easy. Just make sure you have at least .NET 5.0 **SDK** installed (download from [here](https://dotnet.microsoft.com/download/dotnet)).
+Compiling yourself is easy. Just make sure you have at least .NET 6.0 **SDK** installed (download from [here](https://dotnet.microsoft.com/download/dotnet)).
 
 Download the source and `cd` into the project directory. Adapt the command to your needs:
 
