@@ -1,5 +1,9 @@
 ﻿# Firefly III DKB CSV Fixer
 
+**Important:** This program only processes *legacy* CSV exports from DKB. If you are generating your CSV exports through the new banking UI released in 2023, this program will not work. Please check the README [here](https://github.com/firefly-iii/import-configurations/tree/main/de/dkb) for up-to-date information on how to fix these new files. Unless a major bug is found, this application will not receive any more updates.
+
+## About
+
 This application checks if a given file is a valid [DKB](https://www.dkb.de/) transaction report (checking account or credit card). It then converts the file from ANSI to UTF-8, after removing several unwanted lines in order to prepare it for the [Firefly III Data Importer](https://github.com/firefly-iii/data-importer).
 
 These are the lines that are removed:
